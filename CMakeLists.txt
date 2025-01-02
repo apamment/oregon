@@ -12,5 +12,5 @@ add_custom_target(
 
 add_executable(oregon main.c)
 include_directories(${CMAKE_SOURCE_DIR}/odoors)
-TARGET_LINK_LIBRARIES(oregon ${CMAKE_SOURCE_DIR}/odoors/libs-${CMAKE_SYSTEM_NAME}/libODoors.a)
+TARGET_LINK_LIBRARIES(oregon ${CMAKE_SOURCE_DIR}/odoors/libs-${CMAKE_SYSTEM_NAME}/libODoors.a m)
 add_dependencies(oregon odoors)
